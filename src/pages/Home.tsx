@@ -44,6 +44,11 @@ const Home = styled.div`
       }
     }
   }
+  @media screen and (min-width: 48rem) {
+    section:nth-of-type(4) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 `;
 
 export default () => {

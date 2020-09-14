@@ -6,6 +6,11 @@ import ButtonLink from './ButtonLink';
 const StoryCard = styled.div`
   position: relative;
 
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
   .info-container {
     position: absolute;
     width: 100%;

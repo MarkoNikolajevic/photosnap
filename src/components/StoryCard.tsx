@@ -40,6 +40,10 @@ const StoryCard = styled.div`
         justify-content: space-between;
       }
     }
+
+    @media screen and (min-width: 48rem) {
+      padding: 0 2.625rem 2.625rem;
+    }
   }
 `;
 

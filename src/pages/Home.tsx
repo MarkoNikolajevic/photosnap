@@ -10,7 +10,21 @@ import FeaturesSection from '../components/FeaturesSection';
 import FeaturesCard from '../components/FeaturesCard';
 
 const Home = styled.div`
-  section:nth-of-type(2) {
+  .grid:nth-of-type(1) {
+    @media screen and (min-width: 48rem) {
+      grid-template-columns: 2fr 1fr;
+
+      div:nth-child(1) {
+        order: 2;
+        background-image: url(${require(`../assets/home/tablet/create-and-share.jpg`)});
+      }
+
+      div:nth-child(2) {
+        order: 1;
+      }
+    }
+  }
+  .grid:nth-of-type(2) {
     div:nth-child(1) {
       background-image: url(${require(`../assets/home/mobile/beautiful-stories.jpg`)});
     }
@@ -27,9 +41,17 @@ const Home = styled.div`
         }
       }
     }
+
+    @media screen and (min-width: 48rem) {
+      grid-template-columns: 1fr 2fr;
+
+      div:nth-child(1) {
+        background-image: url(${require(`../assets/home/tablet/beautiful-stories.jpg`)});
+      }
+    }
   }
 
-  section:nth-of-type(3) {
+  .grid:nth-of-type(3) {
     div:nth-child(1) {
       background-image: url(${require(`../assets/home/mobile/designed-for-everyone.jpg`)});
     }
@@ -46,10 +68,22 @@ const Home = styled.div`
         }
       }
     }
+    @media screen and (min-width: 48rem) {
+      grid-template-columns: 2fr 1fr;
+
+      div:nth-child(1) {
+        order: 2;
+        background-image: url(${require(`../assets/home/tablet/designed-for-everyone.jpg`)});
+      }
+
+      div:nth-child(2) {
+        order: 1;
+      }
+    }
   }
 
   @media screen and (min-width: 48rem) {
-    section:nth-of-type(4) {
+    .grid:nth-of-type(4) {
       grid-template-columns: 1fr 1fr;
     }
   }
@@ -89,7 +123,7 @@ export default () => {
         <StoryCard date='' title='The mountains' author='by John Appleseed'>
           <picture>
             <source
-              media='(min-width: 1200px)'
+              media='(min-width: 48rem)'
               srcSet={`${require('../assets/stories/desktop/mountains.jpg')}`}
             />
             <img
@@ -101,7 +135,7 @@ export default () => {
         <StoryCard date='' title='Sunset Cityscapes' author='by Benjamin Cruz'>
           <picture>
             <source
-              media='(min-width: 1200px)'
+              media='(min-width: 48rem)'
               srcSet={`${require('../assets/stories/desktop/cityscapes.jpg')}`}
             />
             <img
@@ -113,7 +147,7 @@ export default () => {
         <StoryCard date='' title='18 Days Voyage' author='by Alexei Borodin'>
           <picture>
             <source
-              media='(min-width: 1200px)'
+              media='(min-width: 48rem)'
               srcSet={`${require('../assets/stories/desktop/18-days-voyage.jpg')}`}
             />
             <img
@@ -125,7 +159,7 @@ export default () => {
         <StoryCard date='' title='Architecturals' author='by Samantha Brooke'>
           <picture>
             <source
-              media='(min-width: 1200px)'
+              media='(min-width: 48rem)'
               srcSet={`${require('../assets/stories/desktop/architecturals.jpg')}`}
             />
             <img

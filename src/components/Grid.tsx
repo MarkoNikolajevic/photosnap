@@ -7,5 +7,5 @@ const Grid = styled.div`
 `;
 
 export default (props: { children: any }) => {
-  return <Grid>{props.children}</Grid>;
+  return <Grid className='grid'>{props.children}</Grid>;
 };

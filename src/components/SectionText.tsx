@@ -20,6 +20,17 @@ const SectionText = styled.div`
     letter-spacing: ${({ theme }) => theme.typography.body.letterSpacing};
     opacity: 0.7;
   }
+
+  @media screen and (min-width: 48rem) {
+    padding: 10.75rem 3.375rem;
+
+    h1 {
+      font-size: ${({ theme }) => theme.typography.h1.size};
+      letter-spacing: ${({ theme }) => theme.typography.h1.letterSpacing};
+      line-height: ${({ theme }) => theme.typography.h1.lineHeight};
+      margin-bottom: 1.25rem;
+    }
+  }
 `;
 
 export default (props: {

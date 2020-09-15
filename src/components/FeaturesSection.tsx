@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const FeaturesSection = styled.section`
   background: ${({ theme }) => theme.colors.white};
   padding: 5rem 2rem;
+
+  @media screen and (min-width: 48rem) {
+    padding: 7.5rem 9.75rem;
+  }
 `;
 
 export default (props: { children: any }) => {

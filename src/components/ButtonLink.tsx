@@ -32,6 +32,10 @@ const ButtonLink = styled.button`
       stroke: ${({ theme }) => theme.colors.white};
     }
   }
+
+  @media screen and (min-width: 48rem) {
+    margin-top: 3rem;
+  }
 `;
 
 export default (props: { link: string; label: string }) => {

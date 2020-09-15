@@ -6,6 +6,8 @@ import SectionImg from '../components/SectionImg';
 import SectionText from '../components/SectionText';
 import ButtonLink from '../components/ButtonLink';
 import StoryCard from '../components/StoryCard';
+import FeaturesSection from '../components/FeaturesSection';
+import FeaturesCard from '../components/FeaturesCard';
 
 const Home = styled.div`
   section:nth-of-type(2) {
@@ -26,6 +28,7 @@ const Home = styled.div`
       }
     }
   }
+
   section:nth-of-type(3) {
     div:nth-child(1) {
       background-image: url(${require(`../assets/home/mobile/designed-for-everyone.jpg`)});
@@ -44,6 +47,7 @@ const Home = styled.div`
       }
     }
   }
+
   @media screen and (min-width: 48rem) {
     section:nth-of-type(4) {
       grid-template-columns: 1fr 1fr;
@@ -131,6 +135,26 @@ export default () => {
           </picture>
         </StoryCard>
       </Grid>
+      <FeaturesSection>
+        <FeaturesCard
+          icon={`${require('../assets/features/desktop/responsive.svg')}`}
+          altText='responsive icon'
+          title='100% Responsive'
+          info='No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.'
+        />
+        <FeaturesCard
+          icon={`${require('../assets/features/desktop/no-limit.svg')}`}
+          altText='no upload limit icon'
+          title='No Photo Upload Limit'
+          info='Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.'
+        />
+        <FeaturesCard
+          icon={`${require('../assets/features/desktop/embed.svg')}`}
+          altText='embed icon'
+          title='Available to Embed'
+          info='Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. '
+        />
+      </FeaturesSection>
     </Home>
   );
 };

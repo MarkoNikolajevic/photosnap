@@ -44,6 +44,7 @@ const StoryCard = styled.div`
       font-size: ${({ theme }) => theme.typography.h3.size};
       line-height: ${({ theme }) => theme.typography.h3.lineHeight};
       letter-spacing: ${({ theme }) => theme.typography.h3.letterSpacing};
+      margin: 0.25rem 0;
     }
 
     p {

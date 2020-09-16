@@ -5,6 +5,23 @@ import ButtonLink from './ButtonLink';
 
 const StoryCard = styled.div`
   position: relative;
+  transition: transform 300ms ease-in-out;
+
+  @media screen and (min-width: 75rem) {
+    &:hover {
+      transform: translateY(-1.5rem);
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        background: ${({ theme }) => theme.colors.accent};
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
 
   img {
     height: 100%;

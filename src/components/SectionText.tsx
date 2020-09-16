@@ -34,15 +34,16 @@ const SectionText = styled.div`
 `;
 
 export default (props: {
-  children: any;
+  children?: any;
   headingText: string;
-  paragraph: string;
+  paragraph?: string;
+  class?: string;
 }) => {
   const [headingText] = useState(props.headingText);
   const [paragraph] = useState(props.paragraph);
 
   return (
-    <SectionText>
+    <SectionText className={props.class}>
       <h1>{`${headingText}`}</h1>
       <p>{`${paragraph}`}</p>
       {props.children}

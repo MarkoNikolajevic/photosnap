@@ -11,6 +11,10 @@ import FeaturesCard from '../components/FeaturesCard';
 
 const Home = styled.div`
   .grid:nth-of-type(1) {
+    div:nth-child(1) {
+      background-image: url(${require(`../assets/home/mobile/create-and-share.jpg`)});
+    }
+
     @media screen and (min-width: 48rem) {
       grid-template-columns: 2fr 1fr;
 
@@ -82,9 +86,13 @@ const Home = styled.div`
     }
   }
 
-  @media screen and (min-width: 48rem) {
-    .grid:nth-of-type(4) {
+  .grid:nth-of-type(4) {
+    @media screen and (min-width: 48rem) {
       grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 75rem) {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 `;

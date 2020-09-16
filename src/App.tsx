@@ -6,6 +6,9 @@ import { theme } from './styles/theme';
 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Stories from './pages/Stories';
+import Features from './pages/Features';
+import Pricing from './pages/Pricing';
 
 function App() {
   return (
@@ -15,6 +18,15 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Home />
+        </Route>
+        <Route path='/stories'>
+          <Stories />
+        </Route>
+        <Route path='/features'>
+          <Features />
+        </Route>
+        <Route path='/pricing'>
+          <Pricing />
         </Route>
       </Switch>
     </ThemeProvider>

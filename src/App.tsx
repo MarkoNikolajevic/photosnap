@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './styles/global';
 import { theme } from './styles/theme';
 
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Stories from './pages/Stories';
@@ -14,6 +15,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route exact path='/'>

@@ -23,9 +23,14 @@ const StoryCard = styled.div`
     }
   }
 
-  img {
+  picture {
     height: 100%;
     width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .info-container {

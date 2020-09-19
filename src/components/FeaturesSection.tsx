@@ -7,6 +7,9 @@ const FeaturesSection = styled.section`
 
   @media screen and (min-width: 48rem) {
     padding: 7.5rem 9.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 `;
 

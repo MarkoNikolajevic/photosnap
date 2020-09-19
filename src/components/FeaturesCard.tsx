@@ -13,6 +13,10 @@ const FeaturesCard = styled.div`
     margin-bottom: 0;
   }
 
+  @media screen and (min-width: 48rem) {
+    margin-bottom: 0;
+  }
+
   h3 {
     margin-top: 3rem;
     margin-bottom: 1rem;
